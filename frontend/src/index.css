@@ -1,0 +1,55 @@
+/* CORRECT ORDER */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === PARIS LUXURY THEME === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f9f7f3 0%, #f5f0e6 100%);
+  color: #2d2d2d;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Card */
+.card {
+  @apply bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+}
+
+/* Buttons */
+.btn-gold {
+  @apply bg-gradient-to-r from-amber-500 to-yellow-600 text-white font-medium px-6 py-3 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300;
+}
+
+.btn-black {
+  @apply bg-black text-white font-medium px-6 py-3 rounded-full hover:bg-gray-900 hover:shadow-lg transition-all;
+}
+
+/* Input */
+.input-elegant {
+  @apply w-full px-5 py-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent transition;
+}
+
+/* Navbar */
+.navbar {
+  @apply bg-white/95 backdrop-blur-sm shadow-md sticky top-0 z-50;
+}
+
+/* Product Grid */
+.product-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8;
+}

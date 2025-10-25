@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Products from './pages/Products';
 import Chatbot from './components/Chatbot';
+import './App.css';
 
 function App() {
   return (

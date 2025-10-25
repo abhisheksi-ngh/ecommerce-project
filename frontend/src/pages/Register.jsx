@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
+import './Register.css';
 
 const Register = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -24,8 +25,8 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 via-white to-gray-200 px-4 py-12 sm:px-6 lg:px-8">
-      <div className="bg-white shadow-2xl rounded-2xl w-full max-w-md p-8 sm:p-10 space-y-8 transform transition-all duration-300 hover:shadow-lg">
+    <div className="register">
+      <div className="card w-full max-w-md p-8 sm:p-10 space-y-8">
         <h2 className="text-3xl font-bold text-center text-gray-800 font-sans tracking-tight">
           Create an Account
         </h2>
@@ -44,7 +45,7 @@ const Register = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200"
+              className="input-elegant"
               placeholder="John Doe"
               required
             />
@@ -57,7 +58,7 @@ const Register = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200"
+              className="input-elegant"
               placeholder="john@example.com"
               required
             />
@@ -70,7 +71,7 @@ const Register = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all duration-200"
+              className="input-elegant"
               placeholder="••••••••"
               required
             />
@@ -78,7 +79,7 @@ const Register = () => {
 
           <button
             type="submit"
-            className="w-full py-3 text-lg font-semibold rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-all duration-300 shadow-md hover:shadow-blue-500/50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            className="btn-black w-full py-3 text-lg font-semibold rounded-lg"
           >
             Sign Up
           </button>
@@ -86,10 +87,7 @@ const Register = () => {
 
         <p className="text-center text-sm text-gray-600 mt-6">
           Already have an account?{' '}
-          <Link
-            to="/login"
-            className="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200"
-          >
+          <Link to="/login" className="text-blue-600 hover:text-blue-800 font-medium transition-colors duration-200">
             Log In
           </Link>
         </p>

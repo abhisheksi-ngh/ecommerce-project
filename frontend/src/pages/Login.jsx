@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
+import './Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -21,7 +22,7 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-6 py-20">
+    <div className="login">
       <div className="card w-full max-w-md p-10">
         <h2 className="text-4xl font-bold text-center mb-8 font-heading">
           Bienvenue
@@ -54,13 +55,13 @@ const Login = () => {
             />
           </div>
           
-          <button type="submit" className="w-full btn-gold py-4 text-lg">
+          <button type="submit" className="btn-gold w-full py-4 text-lg">
             Entrer
           </button>
         </form>
         
         <p className="text-center mt-6 text-sm text-gray-600">
-          Pas de compte? <Link to="/register" className="text-paris-gold hover:underline">S'inscrire</Link>
+          Pas de compte? <Link to="/register" className="text-yellow-600 hover:underline">S'inscrire</Link>
         </p>
       </div>
     </div>

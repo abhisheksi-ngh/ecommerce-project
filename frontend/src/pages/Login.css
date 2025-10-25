@@ -1,0 +1,49 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(to bottom right, #f9fafb, #e5e7eb);
+}
+
+.login .card {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 28rem;
+}
+
+.login h2 {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  color: #2d2d2d;
+}
+
+.login .input-elegant {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  transition: border-color 0.3s ease;
+}
+
+.login .input-elegant:focus {
+  border-color: #4299e1;
+  outline: none;
+}
+
+.login .btn-gold {
+  width: 100;
+  padding: 1rem;
+  background-color: #D4AF37;
+  color: #fff;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.login .btn-gold:hover {
+  background-color: #b89d2e;
+}

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import API from '../services/api';
 import ProductCard from '../components/ProductCard';
+import './Product.css';
 
 const Products = () => {
   const [products, setProducts] = useState([]);
@@ -31,14 +32,14 @@ const Products = () => {
   }
 
   return (
-    <div className="min-h-screen py-16 px-6">
+    <div className="products">
       <div className="container mx-auto">
         <h1 className="text-5xl font-bold text-center mb-4 font-heading">
           La Collection
         </h1>
         <p className="text-center text-gray-600 mb-12">Élégance parisienne, précision IA</p>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="filters flex flex-wrap justify-center gap-4 mb-12">
           <select value={category} onChange={e => setCategory(e.target.value)} className="input-elegant max-w-xs">
             <option value="">Toutes les Collections</option>
             <option>Women</option>

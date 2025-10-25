@@ -1,0 +1,115 @@
+.navbar {
+  background: linear-gradient(90deg, #1a2a44 0%, #2e4066 100%);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  font-family: 'Inter', sans-serif;
+  height: 120px; /* Increased height */
+}
+
+.top-nav {
+  background-color: #1f2d4d;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2e4066;
+}
+
+.top-nav a {
+  color: #e0e7ff;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+  padding: 0 0.5rem;
+}
+
+.top-nav a:hover {
+  color: #facc15; /* Unique yellow hover */
+}
+
+.main-nav {
+  padding: 1rem 0;
+}
+
+.main-nav .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #facc15; /* Unique gold color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Unique shadow effect */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 10px; /* Rounded edges */
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 0 1rem;
+}
+
+.search-select {
+  padding: 0.6rem 1rem;
+  border: none;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  font-size: 0.9rem;
+  border-right: 1px solid #e2e8f0;
+  appearance: none;
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  color: #1e293b;
+  width: 100%;
+}
+
+.search-button {
+  padding: 0.6rem 1.2rem;
+  background: linear-gradient(45deg, #facc15, #f59e0b); /* Unique gradient */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.search-button:hover {
+  background: linear-gradient(45deg, #f59e0b, #d97706);
+  transform: translateY(-1px);
+}
+
+.account-cart {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.auth-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px; /* Fully rounded buttons */
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: wheat;
+}
+
+.auth-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,50 @@
+.home {
+  min-height: 100vh;
+  background-color: #f9fafb;
+}
+
+.home .hero {
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #fff, #f9fafb);
+  text-align: center;
+}
+
+.home .hero h1 {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  color: #2d2d2d;
+}
+
+.home .hero p {
+  color: #4a5568;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.home .hero .btn-gold,
+.home .hero .btn-black {
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.home .hero .btn-gold:hover,
+.home .hero .btn-black:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home .features {
+  padding: 4rem 1rem;
+}
+
+.home .feature-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.home .feature-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,36 @@
+.products {
+  min-height: 100vh;
+  padding: 4rem 1rem;
+}
+
+.products h1 {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.products .filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.products .filters select {
+  padding: 0.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  transition: border-color 0.3s ease;
+}
+
+.products .filters select:focus {
+  border-color: #4299e1;
+  outline: none;
+}
+
+.products .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1.5rem;
+}
